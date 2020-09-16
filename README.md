@@ -1,4 +1,2 @@
 # voytek.github.io
----
-permalink: /index.html
----
+A Website
