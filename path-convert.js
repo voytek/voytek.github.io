@@ -44,8 +44,8 @@
 
             var moneyData = $('tr:has(td.money.number) .money.number');
 
-            moneyData.each(function processMoney(money) {
-              console.log(money);
+            moneyData.each(function processMoney(index, money) {
+              console.log(money.html());
             });
 
 
