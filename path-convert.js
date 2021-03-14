@@ -21,7 +21,7 @@
 
     function initMyBookmarklet() {
         (window.myBookmarklet = function() {
-            // your JavaScript code goes here!
+            window.alert("hey!");
         })();
     }
 
