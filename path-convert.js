@@ -30,7 +30,7 @@
               'cp'
             ];
 
-            var coinShift = -1;
+            var coinShift = 1;
             var multiplier = 2;
 
             function convert(amount, units) {
@@ -41,6 +41,10 @@
             }
 
             console.log(convert('5', 'gp'));
+
+            var moneyData = $('tr:has(td.money.number) .money.number');
+
+            console.log(moneyData);
 
 
         })();
