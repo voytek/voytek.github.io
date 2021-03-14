@@ -42,7 +42,7 @@
 
             console.log(convert('5', 'gp'));
 
-            var moneyData = $('tr:has(td.money.number) .money.number').html;
+            var moneyData = $('tr:has(td.money.number) .money.number').html();
 
             console.log(moneyData);
 
