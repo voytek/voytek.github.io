@@ -21,7 +21,9 @@
 
     function initMyBookmarklet() {
         (window.myBookmarklet = function() {
-            window.alert("hey!");
+            //money selector tr:has(td.money.number) .money.number
+
+            console.log($);
         })();
     }
 
