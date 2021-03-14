@@ -23,7 +23,26 @@
         (window.myBookmarklet = function() {
             //money selector tr:has(td.money.number) .money.number
 
-            console.log($);
+            var coinTypes = [
+              'pp',
+              'gp',
+              'sp',
+              'cp'
+            ];
+
+            var coinShift = -1;
+            var multiplier = 2;
+
+            function convert(amount, units) {
+              coinIndex = coinTypes.indexOf(units);
+              console.log(coinIndex);
+
+              return amount * multiplier + ' ' + coinTypes[coinIndex + coinShift];
+            }
+
+            console.log(convert('5', 'gp'));
+
+
         })();
     }
 
